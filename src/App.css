@@ -1,38 +1,130 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  background: transparent;
+  width: 100%;
+  height: 80px;
+}
+
+label.logo {
+  color: yellow;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0px 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+a:hover {
+  color: yellow;
+  transition: 0.05s;
+}
+
+.text {
+  color: white;
+  display: absolute;
+  flex: content;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.backimage {
+  background-image: url("/src/components/back.jpg");
+  width: 100%;
+  height: 80vh;
+  background-blend-mode: screen;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.para1 {
+  margin-left: 300px;
+  margin-right: 300px;
   color: white;
+  display: absolute;
+  flex: content;
+  justify-content: center;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.butns {
+  padding: 40px;
+  color: white;
+  display: absolute;
+  flex: content;
+  justify-content: center;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnn1 {
+  color: white;
+  size: 30px;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 15px;
+  margin-right: 5px;
+  background-color: transparent;
+  border-color: yellow;
+}
+
+.btnn2 {
+  color: white;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 15px;
+  margin-left: 5px;
+  background-color: transparent;
+  border-color: yellow;
+}
+
+.btnn1:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.btnn2:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.card {
+  width: 200px;
+  display: inline-block;
+  justify-content: center;
+  flex: content;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  width: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: space-between;
+}
+
+.ba {
+  color: white;
 }
